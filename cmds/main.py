@@ -55,9 +55,13 @@ class Main(Cog_Extension):
     async def cpp(self, ctx):
         await ctx.send('C++')
 
+    @commands.command()
+    async def cmdA(self, ctx, num:float):
+        await ctx.send(num)
 
-
-
+    @commands.command()
+    async def cmdB(self, ctx, num):
+        await ctx.send(num)
     
 
     
